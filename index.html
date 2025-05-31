@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شاليهات بريق السحاب</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="closeBtn">&times;</span>
+    <h3>احجز شاليهك الآن</h3>
+    <input type="text" id="clientName" placeholder="اسمك الكامل" required />
+    <input type="date" id="bookingDate" required />
+    <input type="number" id="guestCount" placeholder="عدد الأشخاص" required />
+    <button id="sendBooking">إرسال عبر واتساب</button>
+  </div>
+</div>
+
+  <header>
+    <img src="images/logo.png" alt="شعار بريق السحاب" class="logo" />
+    <button id="bookNowBtn">احجز شاليهك الآن</button>
+  </header>
+
+  <section class="hero">
+    <h1>شاليهات بريق السحاب</h1>
+    <p>شاليهات فاخرة مجهزة بأحدث وسائل الراحة</p>
+  </section>
+  <!---قسم  الايقونات-->
+  
+  <section class="features">
+    <h2>نبذة عن شاليهاتنا</h2>
+    <div class="products-description">
+      <p>نوفر لك تجربة إقامة استثنائية في شاليهات مصممة بعناية فائقة، تجمع بين الراحة والفخامة<br>
+         شاليهاتنا مجهزة بأحدث وسائل الراحة والترفيه لضمان إقامة لا تُنسى لك ولعائلتك.</p>
+    </div>
+    <div class="features-container">
+      <div class="feature-card">
+        <i class="material-icons">groups</i>
+        <p>تسع لـ 8 أشخاص</p>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">bathtub</i>
+        <p>ثلاث دورات مياه</p>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">bed</i>
+        <p>ثلاث غرف نوم</p>
+      </div>
+      
+      <div class="feature-card">
+        <i class="material-icons">pool</i>
+        <p>مسبح داخلي</p>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">restaurant</i>
+        <p>مطبخ مجهز</p>
+      </div>
+      <div
+        class="feature-card">
+        <i class="material-icons">wifi</i>
+        <p>واي فاي مجاني</p>
+      </div>
+      <div
+        class="feature-card">
+        <i class="material-icons">local_parking</i>
+        <p>موقف خاص</p>
+      </div>
+      <div
+        class="feature-card">
+        <i class="material-icons">tv</i>
+        <p>اثنين شاشة تلفاز</p>
+      </div>
+      
+    </div>
+  </section>
+  <!-- ... ( قسم معرض الصور) ... -->
+  <section class="gallery-section">
+  <h2>معرض الصور</h2>
+  <p>اكتشف جمال وفخامة شاليهاتنا</p>
+  <div class="main-image-container">
+    <img id="mainImage" src="images/main-chalet.jpg" alt="صورة رئيسية">
+    <button id="prevBtn" class="nav-btn">❮</button>
+    <button id="nextBtn" class="nav-btn">❯</button>
+    <div class="image-caption">شاليهات بريق السحاب</div>
+  </div>
+  <div class="thumbnail-container">
+    <img src="images/main-chalet.jpg" class="thumb no-zoom" alt="">
+    <img src="images/living-room-pool.jpg" class="thumb" alt="">
+    <img src="images/kitchen.jpg" class="thumb" alt="">
+    <img src="images/pool-closeup.jpg" class="thumb" alt="">
+    <img src="images/master-bedroom-view.jpg" class="thumb" alt="">
+    <img src="images/living-room-stairs.jpg" class="thumb" alt="">
+    <img src="images/bedroom-triple.jpg" class="thumb" alt="">
+    <img src="images/bedroom-twin.jpg" class="thumb" alt="">
+    <img src="images/hero-bg.jpg" class="thumb" alt="">
+    <img src="images/bbq-area.jpg" class="thumb" alt="">
+  </div>
+</section>
+
+  <!------قسم التواصل -->
+  <section class="contact-section">
+  <div class="contact-title">
+    <h2>📍 الموقع والتواصل</h2>
+    <p>نحن هنا لخدمتك في أي وقت</p>
+  </div>
+  <div class="contact-content">
+    <div class="map-container">
+      <div>
+        <div style="text-align: center; margin: 20px 0;">
+  <h3>📍 موقع شاليهات بريق السحاب</h3>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.187262505704!2d42.333026!3d17.7828941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e326bf8fec4d79%3A0x6fab6bd72e313f5e!2z2LTYp9mE2YrZh9in2Kog2KjYsdmK2YIg2KfZhNiz2K3Yp9ioICgg2KjYsdmK2YIg2KfYqNmH2Kcg2LPYp9io2YLYpyk!5e0!3m2!1sar!2ssa!4v1748298526970!5m2!1sar!2ssa" 
+    width="100%" 
+    height="600px" 
+    style="border:0; border-radius: 10px;"
+    allowfullscreen="" 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+      </div>
+    </div>
+    <div class="contact-info">
+      
+      <h3>معلومات التواصل</h3> 
+      <p><i class=" material-icons ">phone</i>
+ رقم الهاتف: <br>+966 554470394</p>
+      <p><i class="material-icons">mail</i>
+ البريد الإلكتروني: <br> breqabha2@gmail.com</p>
+      <p><i class="material-icons">location_on</i>
+ العنوان:<br> الدرب، الكدرة</p>
+      <button class="bookingBtn2">احجز شاليهك الآن</button>
+
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+      
+    
+    
+  </footer>
+
+  <button id="whatsappBtn">تواصل عبر واتساب</button>
+
+  <script src="script.js"></script>
+  <section class="logo-section">
+  <img src="images/logo.png" alt="شعار بريق السحاب">
+  <p>2025 © جميع الحقوق محفوظة بريق السحاب</p>
+</section>
+</body>
+</html>
